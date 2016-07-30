@@ -1,0 +1,36 @@
+{
+  "id": "demo-0001",
+  "labels": {
+    "HAPROXY_GROUP":"external",
+    "HAPROXY_0_VHOST":"demo-0001.example.com"
+  },
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "dockercloud/hello-world",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 80, "hostPort": 0, "protocol": "tcp"}
+      ],
+      "privileged": false,
+      "parameters": [
+        { "key": "memory", "value": "16m" }
+      ]
+    }
+  },
+  "cpus": 0.01,
+  "mem": 16.0,
+  "disk": 0.0,
+  "maxLaunchDelaySeconds": 600,
+  "healthChecks": [
+    {
+      "protocol": "TCP",
+      "portIndex": 0,
+      "gracePeriodSeconds": 300,
+      "intervalSeconds": 10,
+      "timeoutSeconds": 30,
+      "maxConsecutiveFailures": 0
+    }
+  ],
+  "instances": 1
+}
