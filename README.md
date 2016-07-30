@@ -12,13 +12,13 @@ docker-compose on mesos with marathon
 * Clone the repo: `git clone git@github.com:uzyexe/mesos-marathon-demo.git && cd mesos-marathon-demo`
 * Add Host: `echo "127.0.0.1  mesos-slave" >> /etc/hosts`
 * Run the local environment: `docker-compose up`
+* Web Browser Access to Marathon WebUI: `http://localhost:8080/ui/#/apps`
 
-## Sample
+## Sample Application
 
 ### dockercloud/hello-world:
 
 * Run the hello-world: `curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" localhost:8080/v2/apps -d @sample/demo.json`
-* Web Browser Access to: `http://localhost:8080/ui/#/apps`
 
 # Authors
 
