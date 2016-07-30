@@ -16,9 +16,9 @@ docker-compose on mesos with marathon
 
 ## Sample Application
 
-### dockercloud/hello-world:
+### dockercloud/hello-world
 
-* Run the hello-world: `curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" localhost:8080/v2/apps -d @sample/demo.json`
+* Run the App: `curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" localhost:8080/v2/apps -d @sample/hello-world.json`
 
 # Authors
 

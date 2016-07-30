@@ -1,9 +1,5 @@
 {
-  "id": "demo-0001",
-  "labels": {
-    "HAPROXY_GROUP":"external",
-    "HAPROXY_0_VHOST":"demo-0001.example.com"
-  },
+  "id": "hello-world",
   "container": {
     "type": "DOCKER",
     "docker": {
