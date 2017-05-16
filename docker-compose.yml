@@ -6,7 +6,7 @@ services:
     ports:
       - "2181:2181"
   mesos-master:
-    image: mesosphere/marathon:v1.3.0
+    image: mesosphere/marathon:v1.3.10
     hostname: mesos-master
     entrypoint: [ "mesos-master" ]
     ports:
@@ -45,7 +45,7 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
   marathon:
-    image: mesosphere/marathon:v1.3.0
+    image: mesosphere/marathon:v1.3.10
     ports:
      - "8080:8080"
     links:
