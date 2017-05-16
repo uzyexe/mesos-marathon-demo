@@ -46,6 +46,7 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock"
   marathon:
     image: mesosphere/marathon:v1.3.10
+    hostname: localhost
     ports:
      - "8080:8080"
     links:
