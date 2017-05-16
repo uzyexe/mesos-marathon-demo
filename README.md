@@ -13,8 +13,8 @@ docker-compose on mesos with marathon
 * Add Host: `echo "127.0.0.1  mesos-slave" >> /etc/hosts`
 * Run the local environment: `docker-compose up`
 * Web Browser Access:
-  - Marathon WebUI: `http://localhost:8080/ui/#/apps`
-  - Mesos WebUI: `http://localhost:5050`
+  - Marathon WebUI: [http://localhost:8080/ui/#/apps](http://localhost:8080/ui/#/apps)
+  - Mesos WebUI: [http://localhost:5050](http://localhost:5050)
 
 ## Sample Application
 
