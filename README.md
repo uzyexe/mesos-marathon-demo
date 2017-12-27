@@ -4,7 +4,7 @@ docker-compose on mesos with marathon
 
 ## Dependencies
 
-* Docker Engine 1.12.0+
+* Docker Engine 1.13.0+
 * Docker Compose 1.9.0+
 
 ## QuickStart
