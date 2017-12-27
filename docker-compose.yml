@@ -2,7 +2,7 @@ version: "3"
 
 services:
   zookeeper:
-    image: netflixoss/exhibitor:1.5.2
+    image: zookeeper:3.4.11
     hostname: zookeeper
     ports:
       - "2181:2181"
