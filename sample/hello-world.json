@@ -10,23 +10,13 @@
       ],
       "privileged": false,
       "parameters": [
-        { "key": "memory", "value": "16m" }
+        { "key": "memory", "value": "32m" }
       ]
     }
   },
-  "cpus": 0.01,
+  "cpus": 0.1,
   "mem": 16.0,
   "disk": 0.0,
   "maxLaunchDelaySeconds": 600,
-  "healthChecks": [
-    {
-      "protocol": "TCP",
-      "portIndex": 0,
-      "gracePeriodSeconds": 300,
-      "intervalSeconds": 10,
-      "timeoutSeconds": 30,
-      "maxConsecutiveFailures": 0
-    }
-  ],
   "instances": 1
 }
