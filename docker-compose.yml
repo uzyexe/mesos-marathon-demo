@@ -33,7 +33,6 @@ services:
       MESOS_LOG_DIR: /var/log/mesos
       LIBPROCESS_IP: 172.16.121.3
 
-
   mesos-slave:
     image: mesosphere/mesos-slave:1.4.1
     privileged: true
@@ -63,7 +62,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 
   marathon:
-    image: mesosphere/marathon:v1.5.5
+    image: mesosphere/marathon:v1.5.6
     entrypoint:
       - ./bin/start
       - --disable_ha
