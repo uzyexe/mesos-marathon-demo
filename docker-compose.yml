@@ -34,7 +34,7 @@ services:
       LIBPROCESS_IP: 172.16.121.3
 
   mesos-slave:
-    image: mesosphere/mesos-slave:1.4.1
+    image: mesosphere/mesos-slave:1.5.0
     privileged: true
     hostname: localhost
     ports:
