@@ -11,7 +11,7 @@ services:
         ipv4_address: 172.16.121.2
 
   mesos-master:
-    image: mesosphere/mesos-master:1.4.1
+    image: mesosphere/mesos-master:1.5.0
     privileged: true
     hostname: localhost
     ports:
