@@ -62,7 +62,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 
   marathon:
-    image: mesosphere/marathon:v1.5.9
+    image: mesosphere/marathon:v1.8.667
     entrypoint:
       - ./bin/start
       - --disable_ha
