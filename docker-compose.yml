@@ -11,7 +11,7 @@ services:
         ipv4_address: 172.16.121.2
 
   mesos-master:
-    image: mesosphere/mesos-master:1.5.0
+    image: mesosphere/mesos-master:1.7.1
     privileged: true
     hostname: localhost
     ports:
@@ -34,7 +34,7 @@ services:
       LIBPROCESS_IP: 172.16.121.3
 
   mesos-slave:
-    image: mesosphere/mesos-slave:1.5.0
+    image: mesosphere/mesos-slave:1.7.1
     privileged: true
     hostname: localhost
     ports:
